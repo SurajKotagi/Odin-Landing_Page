@@ -1,5 +1,7 @@
 * {
     font-family: "Roboto";
+    /* padding: 0px;
+    margin: 0px; */
 }
 body {
     padding: 0px;
@@ -14,7 +16,7 @@ ul {
     justify-content: flex-start;
     align-items: center;
     gap: 60px;
-    height: 450px;
+    height: 550px;
 }
 .navbar,
 .navbar_items,
@@ -77,4 +79,71 @@ button {
 }
 h1 {
     margin-top: 0px;
+}
+
+/* style for information section*/
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+}
+#info_heading {
+    margin: 40px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+.image-container {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    gap: 80px;
+}
+.image-container > div > img {
+    width: 150px;
+    height: 150px;
+    /* border: 5px solid #3882f6; */
+    border-radius: 10px;
+}
+.image-container div {
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+img {
+    width: 100%;
+    transition: all 0.7s ease-in-out;
+}
+img:hover {
+    transform: scale(1.2);
+}
+.info p {
+    text-align: center;
+}
+
+/* Quote styling */
+.quote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+}
+.quote div {
+    width: 550px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quote #main-quote {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #1f2937;
+}
+#author {
+    align-self: flex-end;
 }
